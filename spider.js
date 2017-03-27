@@ -21,7 +21,7 @@ http.get("http://www.ss.pku.edu.cn/index.php/newscenter/news",function(res){
 	    	var news_item = {
 	      	title:$('.info-title',this).text(),//显示类为.info-title的文字内容
 	      	title:$('.time',this).text(),///显示类为.time的文字内容
-	      	link:'http://www.ss.pku.edu.cn'+ $('a',this).attr('href'),主页网址加上a中属性为href的内容
+	      	link:'http://www.ss.pku.edu.cn'+ $('a',this).attr('href'),//主页网址加上a中属性为href的内容
 	    	};
 
 	  	news.push(news_item);//将每一个news_item放入news对象中
